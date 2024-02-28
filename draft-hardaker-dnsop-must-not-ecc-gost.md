@@ -4,6 +4,8 @@ abbrev: MUST NOT DNSSEC with ECC-GOST
 docname: draft-hardaker-dnsop-must-not-ecc-gost-00
 category: std
 ipr: trust200902
+stream: IETF
+
 
 stand_alone: yes
 pi: [toc, sortrefs, symrefs, docmapping]
@@ -68,11 +70,11 @@ This document retires the use of ECC-GOST within DNSSEC.
 
 # Deprecating ECC-GOST algorithms in DNSSEC
 
-The ECC-GOST {{RFC5933}} algorithm MUST NOT be used when creating DS
-records.  Validating resolvers MUST treat DS records as insecure.  If
-no other DS records of accepted cryptographic algorithms are
-available, the DNS records below the delegation point MUST be treated
-as insecure.
+The GOST R 34.11-94 {{RFC5933}} algorithm MUST NOT be used when
+creating DS records.  Validating resolvers MUST treat DS records as
+insecure.  If no other DS records of accepted cryptographic algorithms
+are available, the DNS records below the delegation point MUST be
+treated as insecure.
 
 The ECC-GOST {{RFC5933}} algorithm MUST NOT be used when creating
 DNSKEY and RRSIG records.  Validating resolvers MUST treat RRSIG
@@ -99,7 +101,7 @@ records.
 # IANA Considerations
 
 IANA is requested to set the "DNSSEC Validation" of the "Digest
-Algorithms" registry {{DS-IANA}} for ECC-GOST (3) to MUST NOT.
+Algorithms" registry {{DS-IANA}} for GOST R 34.11-94 (3) to MUST NOT.
 
 IANA is requested to set the "Recommended for DNSSEC Validation"
 column of the DNS Security Algorithm Numbers registry {{DNSKEY-IANA}}
