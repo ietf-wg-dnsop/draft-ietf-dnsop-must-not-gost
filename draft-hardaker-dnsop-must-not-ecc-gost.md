@@ -22,15 +22,10 @@ author:
 
 normative:
   RFC2119:
-  RFC3174:
-  RFC3685:
   RFC4033:
   RFC4034:
   RFC4035:
-  RFC4509:
-  RFC5155:
-  RFC5702:
-  RFC6605:
+  RFC5933:
   RFC8080:
   DNSKEY-IANA:
     author:
@@ -58,7 +53,8 @@ This document retires the use of ECC-GOST within DNSSEC.
 The security of the ECC-GOST algorithm {{RFC5933}} has been slowly
 diminishing over time as various forms of attacks have weakened its
 cryptographic underpinning.  Thus, the use of ECC-GOST is no longer
-needed and is not recommend for use.
+needed and is not recommend for use in DNSSEC {{RFC4033}} {{RFC4034}}
+{{RFC4035}}.
 
 This document retires the use of ECC-GOST within DNSSEC.
 
