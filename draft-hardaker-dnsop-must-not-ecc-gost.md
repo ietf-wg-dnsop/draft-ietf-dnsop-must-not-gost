@@ -126,5 +126,5 @@ https://stats.dnssec-tools.org/ website.
 While this document is under development, it can be viewed, tracked,
 fill here:
 
-https://github.com/hardaker/draft-hardaker-dnsop-must-not-sha1
+https://github.com/hardaker/draft-hardaker-dnsop-must-not-gost
 
