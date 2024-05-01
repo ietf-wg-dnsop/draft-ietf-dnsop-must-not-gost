@@ -77,11 +77,11 @@ are available, the DNS records below the delegation point MUST be
 treated as insecure.
 
 The ECC-GOST {{RFC5933}} algorithm MUST NOT be used when creating
-DNSKEY and RRSIG records.  Validating resolvers MUST treat RRSIG
-records created from DNSKEY records using these algorithms as
-insecure.  If no other RRSIG records of accepted cryptographic
+DNSKEY and RRSIG records.  Validating resolvers MUST treat
+RRSIG records created from DNSKEY records using these algorithms as an
+unsupported algorithm. If no other RRSIG records of accepted cryptographic
 algorithms are available, the validating resolver MUST consider the
-associated resource records as Bogus.
+associated resource records as Insecure.
 
 
 # Security Considerations
