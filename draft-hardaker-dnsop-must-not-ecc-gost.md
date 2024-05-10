@@ -52,11 +52,10 @@ This document retires the use of ECC-GOST within DNSSEC.
 
 # Introduction
 
-The security of the ECC-GOST algorithm {{RFC5933}} has been slowly
-diminishing over time as various forms of attacks have weakened its
-cryptographic underpinning.  Thus, the use of ECC-GOST is no longer
-needed and is not recommend for use in DNSSEC {{RFC4033}} {{RFC4034}}
-{{RFC4035}}.
+The ECC-GOST algorithm {{RFC5933}} has been depreciated and
+{{RFC5933}} has been made historic.  Thus, the use of ECC-GOST is no
+longer needed and is not recommend for use in DNSSEC {{RFC4033}}
+{{RFC4034}} {{RFC4035}}.
 
 This document retires the use of ECC-GOST within DNSSEC.
 
