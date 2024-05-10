@@ -71,10 +71,10 @@ This document retires the use of ECC-GOST within DNSSEC.
 # Deprecating ECC-GOST algorithms in DNSSEC
 
 The GOST R 34.11-94 {{RFC5933}} algorithm MUST NOT be used when
-creating DS records.  Validating resolvers MUST treat DS records as
-insecure.  If no other DS records of accepted cryptographic algorithms
-are available, the DNS records below the delegation point MUST be
-treated as insecure.
+creating DS records.  Validating resolvers MUST treat GOST R 34.11-94
+DS records as insecure.  If no other DS records of accepted
+cryptographic algorithms are available, the DNS records below the
+delegation point MUST be treated as insecure.
 
 The ECC-GOST {{RFC5933}} algorithm MUST NOT be used when creating
 DNSKEY and RRSIG records.  Validating resolvers MUST treat
