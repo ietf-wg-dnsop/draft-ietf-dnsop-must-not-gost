@@ -29,6 +29,8 @@ normative:
   RFC4035:
   RFC5933:
   RFC8080:
+  RFC9364:
+
   DNSKEY-IANA:
     author:
       name: IANA
@@ -42,6 +44,7 @@ normative:
 
 informative:
   RFC8499:
+  RFC9558:
 
 
 --- abstract
@@ -61,7 +64,7 @@ in DNSSEC is documented in {{RFC9558}}, and so {{RFC5933}} has been made
 Historic.
 
 Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and and GOST R 34.11-94
-is no not recommend for use in DNSSEC {{RFC4033}} {{RFC4034}} {{RFC4035}}.
+is no not recommend for use in DNSSEC {{RFC9364}}.
 
 Note that this document does not change or discuss the use of GOST 34.10-2012
 and GOST 34.11-2012.
