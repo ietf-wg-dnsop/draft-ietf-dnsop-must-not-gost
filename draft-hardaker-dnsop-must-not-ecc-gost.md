@@ -1,7 +1,7 @@
 ---
 title: "Remove ECC-GOST from use within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
-docname: draft-hardaker-dnsop-must-not-ecc-gost-00
+docname: draft-hardaker-dnsop-must-not-ecc-gost-01
 category: std
 ipr: trust200902
 stream: IETF
