@@ -1,5 +1,5 @@
 ---
-title: "Remove ECC-GOST from active use within DNSSEC"
+title: "Remove ECC-GOST from use within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
 docname: draft-hardaker-dnsop-must-not-ecc-gost-00
 category: std
