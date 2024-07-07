@@ -100,12 +100,16 @@ and publish ECC-GOST based DS records.
 IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
 Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
 Validation" columns of the DNS Security Algorithm Numbers registry
-{{DNSKEY-IANA}} for ECC-GOST (23) to MUST NOT.
+{{DNSKEY-IANA}} for ECC-GOST (23) to MUST NOT.  Note that previously
+the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
+columns were already MUST NOT.
 
 IANA is requested to set the "Use for DNSSEC Delegation", "Use for DNSSEC
 Validation", "Implement for DNSSEC Delegation", and "Implement for DNSSEC
 Validation" columns of the "Digest Algorithms" registry {{DS-IANA}}
-for GOST R 34.11-94 (3) to MUST NOT.
+for GOST R 34.11-94 (3) to MUST NOT.  Note that previously
+the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
+columns were already MUST NOT.
 
 --- back
 
