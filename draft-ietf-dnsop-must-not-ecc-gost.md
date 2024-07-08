@@ -61,7 +61,7 @@ and GOST 34.11-2012 respectively. The use of GOST 34.10-2012 and GOST
 has been made Historic.
 
 Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and and GOST R 34.11-94
-is no not recommend for use in DNSSEC {{RFC9364}}.
+is no longer recommended for use in DNSSEC {{RFC9364}}.
 
 Note that this document does not change or discuss the use of GOST 34.10-2012
 and GOST 34.11-2012.
