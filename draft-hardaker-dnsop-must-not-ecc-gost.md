@@ -24,11 +24,7 @@ author:
 
 normative:
   RFC2119:
-  RFC4033:
-  RFC4034:
-  RFC4035:
   RFC5933:
-  RFC8080:
   RFC9364:
 
   DNSKEY-IANA:
@@ -55,13 +51,14 @@ This document retires the use of ECC-GOST within DNSSEC.
 
 # Introduction
 
-The use of the GOST R 34.10-2001 and GOST R 34.11-94 algorithms with DNSSEC was
-documented in {{RFC5933}}. These two algorithms were deprecated by the Orders
-of the Federal Agency for Technical Regulation and Metrology of Russia
-(Rosstandart) in August 2012, and were superseded by GOST 34.10-2012 and
-GOST 34.11-2012 respectively. The use of GOST 34.10-2012 and GOST 34.11-2012
-in DNSSEC is documented in {{RFC9558}}, and so {{RFC5933}} has been made
-Historic.
+The use of the GOST R 34.10-2001 and GOST R 34.11-94 algorithms with
+the DNS Security Extensions (DNSSEC) [RFC9364] was documented in
+{{RFC5933}}. These two algorithms were deprecated by the Orders of the
+Federal Agency for Technical Regulation and Metrology of Russia
+(Rosstandart) in August 2012, and were superseded by GOST 34.10-2012
+and GOST 34.11-2012 respectively. The use of GOST 34.10-2012 and GOST
+34.11-2012 in DNSSEC is documented in {{RFC9558}}, and so {{RFC5933}}
+has been made Historic.
 
 Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and and GOST R 34.11-94
 is no not recommend for use in DNSSEC {{RFC9364}}.
