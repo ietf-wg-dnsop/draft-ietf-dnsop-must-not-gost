@@ -1,7 +1,7 @@
 ---
 title: "Remove deprecated GOST algorithms from active use within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
-docname: draft-hardaker-dnsop-must-not-ecc-gost-00
+docname: draft-hardaker-dnsop-must-not-ecc-gost-01
 category: std
 ipr: trust200902
 stream: IETF
@@ -92,7 +92,6 @@ unsupported algorithm. If no other RRSIG records of accepted cryptographic
 algorithms are available, the validating resolver MUST consider the
 associated resource records as Insecure.
 
-
 # Security Considerations
 
 This document increases the security of the DNSSEC ecosystem by
@@ -102,19 +101,25 @@ derived uses.
 # Operational Considerations
 
 Zone owners currently making use of ECC-GOST based algorithms should
-immediate switch to algorithms with stronger cryptographic strengths,
-such as those listed in the introduction.  DNS registries {{?RFC8499}}
-should prohibit their clients to upload and publish ECC-GOST based DS
-records.
+immediate switch to algorithms with stronger cryptographic strengths.
+DNS registries {{?RFC8499}} should prohibit their clients to upload
+and publish ECC-GOST based DS records.
 
 # IANA Considerations
 
-IANA is requested to set the "DNSSEC Validation" of the "Digest
-Algorithms" registry {{DS-IANA}} for GOST R 34.11-94 (3) to MUST NOT.
+IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
+Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
+Validation" columns of the DNS Security Algorithm Numbers registry
+{{DNSKEY-IANA}} for ECC-GOST (23) to MUST NOT.  Note that previously
+the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
+columns were already MUST NOT.
 
-IANA is requested to set the "Recommended for DNSSEC Validation"
-column of the DNS Security Algorithm Numbers registry {{DNSKEY-IANA}}
-for ECC-GOST (23) to MUST NOT:
+IANA is requested to set the "Use for DNSSEC Delegation", "Use for DNSSEC
+Validation", "Implement for DNSSEC Delegation", and "Implement for DNSSEC
+Validation" columns of the "Digest Algorithms" registry {{DS-IANA}}
+for GOST R 34.11-94 (3) to MUST NOT.  Note that previously
+the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
+columns were already MUST NOT.
 
 --- back
 
