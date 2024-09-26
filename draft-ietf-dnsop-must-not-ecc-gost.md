@@ -39,7 +39,7 @@ normative:
     title: Delegation Signer (DS) Resource Record (RR) Type Digest Algorithms
 
 informative:
-  RFC8499:
+  RFC9499:
   RFC9558:
 
 
@@ -99,7 +99,7 @@ derived uses.
 
 Zone owners currently making use of ECC-GOST based algorithms should
 immediate switch to algorithms with stronger cryptographic strengths.
-DNS registries {{?RFC8499}} should prohibit their clients to upload
+DNS registries {{?RFC9499}} should prohibit their clients to upload
 and publish ECC-GOST based DS records.
 
 # IANA Considerations
