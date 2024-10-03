@@ -1,0 +1,10 @@
+.refcache/**
+*~
+*.swp
+lib
+rfc2629xslt
+*.xslt
+.template-files.mk
+issues.json
+pulls.json
+*.DS_Store
