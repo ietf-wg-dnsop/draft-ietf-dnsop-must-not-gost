@@ -107,7 +107,7 @@ and publish ECC-GOST based DS records.
 IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
 Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
 Validation" columns of the DNS Security Algorithm Numbers registry
-{{DNSKEY-IANA}} for ECC-GOST (23) to MUST NOT.  Note that previously
+{{DNSKEY-IANA}} for ECC-GOST (12) to MUST NOT.  Note that previously
 the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
 columns were already MUST NOT.
 
