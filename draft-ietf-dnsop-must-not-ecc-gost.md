@@ -1,5 +1,5 @@
 ---
-title: "Remove deprecated GOST algorithms from active use within DNSSEC"
+title: "Deprecate usage of ECC-GOST within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
 docname: draft-ietf-dnsop-must-not-ecc-gost-01
 category: std
