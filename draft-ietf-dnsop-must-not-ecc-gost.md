@@ -91,16 +91,15 @@ associated resource records as Insecure.
 
 # Security Considerations
 
-This document increases the security of the DNSSEC ecosystem by
-deprecating algorithms that make use of older algorithms with ECC-GOST
-derived uses.
+This document potentially increases the security of the DNSSEC ecosystem by
+deprecating algorithms that are no longer recommended for use.
 
 # Operational Considerations
 
-Zone owners currently making use of ECC-GOST based algorithms should
-immediate switch to algorithms with stronger cryptographic strengths.
-DNS registries {{?RFC9499}} should prohibit their clients to upload
-and publish ECC-GOST based DS records.
+This document removes support for ECC-GOST. Zone operators currently making use
+of ECC-GOST based algorithms should switch to algorithms that remain supported.
+DNS registries should prohibit their clients to upload and publish ECC-GOST
+based DS records.
 
 # IANA Considerations
 
@@ -122,10 +121,11 @@ columns were already MUST NOT.
 
 # Acknowledgments
 
-The authors appreciate the comments and suggestions from the following
-IETF participants in helping produce this document: Mark Andrews, Brian
-Dickson, Paul Wouters and the many members of the DNSOP working group
-that discussed this draft.
+The authors appreciate the comments and suggestions from the following IETF
+participants in helping produce this document: Mark Andrews, Steve Crocker,
+Brian Dickson, Russ Housely, Shumon Huque, Paul Hoffman, S Moonesamy, Peter
+Dickson, Peter Thomassen, Stefan Ubbink, Paul Wouters, Tim Wicinski,  and the
+many members of the DNSOP working group that discussed this draft.
 
 # Current algorithm usage levels
 
@@ -142,3 +142,4 @@ fill here:
 
 https://github.com/hardaker/draft-hardaker-dnsop-must-not-gost
 
+<RFC Editor: please delete this section upon publication>
