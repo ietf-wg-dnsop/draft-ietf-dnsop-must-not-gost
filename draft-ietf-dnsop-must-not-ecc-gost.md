@@ -121,10 +121,11 @@ columns were already MUST NOT.
 
 # Acknowledgments
 
-The authors appreciate the comments and suggestions from the following
-IETF participants in helping produce this document: Mark Andrews, Brian
-Dickson, Paul Wouters and the many members of the DNSOP working group
-that discussed this draft.
+The authors appreciate the comments and suggestions from the following IETF
+participants in helping produce this document: Mark Andrews, Steve Crocker,
+Brian Dickson, Russ Housely, Shumon Huque, Paul Hoffman, S Moonesamy, Peter
+Dickson, Peter Thomassen, Stefan Ubbink, Paul Wouters, Tim Wicinski,  and the
+many members of the DNSOP working group that discussed this draft.
 
 # Current algorithm usage levels
 
