@@ -87,7 +87,7 @@ DNSKEY and RRSIG records.  Validating resolvers MUST treat
 RRSIG records created from DNSKEY records using these algorithms as an
 unsupported algorithm. If no other RRSIG records of accepted cryptographic
 algorithms are available, the validating resolver MUST consider the
-associated resource records as Insecure.
+associated resource records as insecure.
 
 # Security Considerations
 
