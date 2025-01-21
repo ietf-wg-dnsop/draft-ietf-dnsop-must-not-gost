@@ -5,12 +5,12 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
 Intended status: Standards Track                               W. Kumari
-Expires: 19 July 2025                                             Google
-                                                         15 January 2025
+Expires: 25 July 2025                                             Google
+                                                         21 January 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
-                 draft-ietf-dnsop-must-not-ecc-gost-01
+                 draft-ietf-dnsop-must-not-ecc-gost-02
 
 Abstract
 
@@ -31,7 +31,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 July 2025.
+   This Internet-Draft will expire on 25 July 2025.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Hardaker & Kumari         Expires 19 July 2025                  [Page 1]
+Hardaker & Kumari         Expires 25 July 2025                  [Page 1]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Hardaker & Kumari         Expires 19 July 2025                  [Page 2]
+Hardaker & Kumari         Expires 25 July 2025                  [Page 2]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
 
@@ -165,7 +165,7 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
 
 
 
-Hardaker & Kumari         Expires 19 July 2025                  [Page 3]
+Hardaker & Kumari         Expires 25 July 2025                  [Page 3]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
 
@@ -221,7 +221,7 @@ Appendix B.  Current algorithm usage levels
 
 
 
-Hardaker & Kumari         Expires 19 July 2025                  [Page 4]
+Hardaker & Kumari         Expires 25 July 2025                  [Page 4]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
 
@@ -277,4 +277,4 @@ Authors' Addresses
 
 
 
-Hardaker & Kumari         Expires 19 July 2025                  [Page 5]
+Hardaker & Kumari         Expires 25 July 2025                  [Page 5]
