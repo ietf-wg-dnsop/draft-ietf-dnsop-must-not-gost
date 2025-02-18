@@ -4,17 +4,27 @@
 
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
-Intended status: Standards Track                               W. Kumari
-Expires: 25 July 2025                                             Google
-                                                         21 January 2025
+Updates: 5933 (if approved)                                    W. Kumari
+Intended status: Standards Track                                  Google
+Expires: 22 August 2025                                 18 February 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
-                 draft-ietf-dnsop-must-not-ecc-gost-02
+                 draft-ietf-dnsop-must-not-ecc-gost-03
 
 Abstract
 
    This document retires the use of ECC-GOST within DNSSEC.
+
+   RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST
+   R 34.11-94 algorithms with DNS Security Extensions (DNSSEC).  This
+   document updates RFC5933 by deprecating the use of ECC-GOST.
+
+   [RFC Editor: please remove this before publication: It is unclear if
+   updating RFC5933 (a Historic document) is the correct thing to do or
+   not.  We did it so that it shows up in Datatracker and similar, but
+   this may be a mistake.  We are happy to change this if the RFC Editor
+   / IESG / whoever thinks this is a bad idea.]
 
 Status of This Memo
 
@@ -31,12 +41,22 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 July 2025.
+   This Internet-Draft will expire on 22 August 2025.
 
 Copyright Notice
 
    Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
+
+
+
+
+
+
+Hardaker & Kumari        Expires 22 August 2025                 [Page 1]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+
 
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents (https://trustee.ietf.org/
@@ -47,30 +67,19 @@ Copyright Notice
    described in Section 4.e of the Trust Legal Provisions and are
    provided without warranty as described in the Revised BSD License.
 
-
-
-
-
-
-
-Hardaker & Kumari         Expires 25 July 2025                  [Page 1]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
-
-
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-     1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   2
-   2.  Deprecating ECC-GOST algorithms in DNSSEC . . . . . . . . . .   2
+     1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   3
+   2.  Deprecating ECC-GOST algorithms in DNSSEC . . . . . . . . . .   3
    3.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
    4.  Operational Considerations  . . . . . . . . . . . . . . . . .   3
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
-   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   3
-     6.1.  Normative References  . . . . . . . . . . . . . . . . . .   3
+   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     6.1.  Normative References  . . . . . . . . . . . . . . . . . .   4
      6.2.  Informative References  . . . . . . . . . . . . . . . . .   4
-   Appendix A.  Acknowledgments  . . . . . . . . . . . . . . . . . .   4
-   Appendix B.  Current algorithm usage levels . . . . . . . . . . .   4
+   Appendix A.  Acknowledgments  . . . . . . . . . . . . . . . . . .   5
+   Appendix B.  Current algorithm usage levels . . . . . . . . . . .   5
    Appendix C.  Github Version of this document  . . . . . . . . . .   5
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
 
@@ -91,6 +100,20 @@ Table of Contents
    Note that this document does not change or discuss the use of GOST
    34.10-2012 and GOST 34.11-2012.
 
+
+
+
+
+
+
+
+
+
+Hardaker & Kumari        Expires 22 August 2025                 [Page 2]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+
+
 1.1.  Requirements notation
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
@@ -106,13 +129,6 @@ Table of Contents
    DS records as insecure.  If no other DS records of accepted
    cryptographic algorithms are available, the DNS records below the
    delegation point MUST be treated as insecure.
-
-
-
-Hardaker & Kumari         Expires 25 July 2025                  [Page 2]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
-
 
    The ECC-GOST [RFC5933] algorithm MUST NOT be used when creating
    DNSKEY and RRSIG records.  Validating resolvers MUST treat RRSIG
@@ -132,7 +148,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
    This document removes support for ECC-GOST.  Zone operators currently
    making use of ECC-GOST based algorithms should switch to algorithms
    that remain supported.  DNS registries should prohibit their clients
-   to upload and publish ECC-GOST based DS records.
+   from uploading and publishing ECC-GOST based DS records to ensure
+   that they are using algorithms which are supported by DNSSEC
+   validators, and so can be DNSSEC validated.
 
 5.  IANA Considerations
 
@@ -142,6 +160,15 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
    registry [DNSKEY-IANA] for ECC-GOST (12) to MUST NOT.  Note that
    previously the "Use for DNSSEC Signing" and "Implement for DNSSEC
    Delegation" columns were already MUST NOT.
+
+
+
+
+
+Hardaker & Kumari        Expires 22 August 2025                 [Page 3]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+
 
    IANA is requested to set the "Use for DNSSEC Delegation", "Use for
    DNSSEC Validation", "Implement for DNSSEC Delegation", and "Implement
@@ -163,13 +190,6 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
               Digest Algorithms", n.d.,
               <http://www.iana.org/assignments/ds-rr-types>.
 
-
-
-Hardaker & Kumari         Expires 25 July 2025                  [Page 3]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
-
-
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
@@ -190,14 +210,21 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
-   [RFC9499]  Hoffman, P. and K. Fujiwara, "DNS Terminology", BCP 219,
-              RFC 9499, DOI 10.17487/RFC9499, March 2024,
-              <https://www.rfc-editor.org/rfc/rfc9499>.
-
    [RFC9558]  Makarenko, B. and V. Dolmatov, Ed., "Use of GOST 2012
               Signature Algorithms in DNSKEY and RRSIG Resource Records
               for DNSSEC", RFC 9558, DOI 10.17487/RFC9558, April 2024,
               <https://www.rfc-editor.org/rfc/rfc9558>.
+
+
+
+
+
+
+
+Hardaker & Kumari        Expires 22 August 2025                 [Page 4]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+
 
 Appendix A.  Acknowledgments
 
@@ -215,16 +242,6 @@ Appendix B.  Current algorithm usage levels
    https://stats.dnssec-tools.org/ website.
 
    <RFC Editor: please delete this section upon publication>
-
-
-
-
-
-
-Hardaker & Kumari         Expires 25 July 2025                  [Page 4]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST         January 2025
-
 
 Appendix C.  Github Version of this document
 
@@ -260,21 +277,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Hardaker & Kumari         Expires 25 July 2025                  [Page 5]
+Hardaker & Kumari        Expires 22 August 2025                 [Page 5]
