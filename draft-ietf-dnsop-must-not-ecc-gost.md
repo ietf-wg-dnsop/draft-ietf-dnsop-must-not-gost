@@ -5,6 +5,7 @@ docname: draft-ietf-dnsop-must-not-ecc-gost-02
 category: std
 ipr: trust200902
 stream: IETF
+updates: 5933
 
 
 stand_alone: yes
@@ -39,13 +40,22 @@ normative:
     title: Delegation Signer (DS) Resource Record (RR) Type Digest Algorithms
 
 informative:
-  RFC9499:
   RFC9558:
 
 
 --- abstract
 
 This document retires the use of ECC-GOST within DNSSEC.
+
+RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST R 34.11-94
+algorithms with DNS Security Extensions (DNSSEC). This document updates RFC5933
+by deprecating the use of ECC-GOST.
+
+[RFC Editor: please remove this before publication: It is unclear if updating
+RFC5933 (a Historic document) is the correct thing to do or not. We did it
+so that it shows up in Datatracker and similar, but this may be a
+mistake. We are happy to change this if the RFC Editor / IESG / whoever thinks
+this is a bad idea.]
 
 --- middle
 
@@ -98,8 +108,9 @@ deprecating algorithms that are no longer recommended for use.
 
 This document removes support for ECC-GOST. Zone operators currently making use
 of ECC-GOST based algorithms should switch to algorithms that remain supported.
-DNS registries should prohibit their clients to upload and publish ECC-GOST
-based DS records.
+DNS registries should prohibit their clients from uploading and publishing
+ECC-GOST based DS records to ensure that they are using algorithms which are
+supported by DNSSEC validators, and so can be DNSSEC validated.
 
 # IANA Considerations
 
