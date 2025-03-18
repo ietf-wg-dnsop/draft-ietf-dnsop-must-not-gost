@@ -1,10 +1,11 @@
 ---
-title: "Remove deprecated GOST algorithms from active use within DNSSEC"
+title: "Deprecate usage of ECC-GOST within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
-docname: draft-ietf-dnsop-must-not-ecc-gost-02
+docname: draft-ietf-dnsop-must-not-ecc-gost-04
 category: std
 ipr: trust200902
 stream: IETF
+updates: 5933
 
 
 stand_alone: yes
@@ -39,13 +40,22 @@ normative:
     title: Delegation Signer (DS) Resource Record (RR) Type Digest Algorithms
 
 informative:
-  RFC9499:
   RFC9558:
 
 
 --- abstract
 
 This document retires the use of ECC-GOST within DNSSEC.
+
+RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST R 34.11-94
+algorithms with DNS Security Extensions (DNSSEC). This document updates RFC5933
+by deprecating the use of ECC-GOST.
+
+[RFC Editor: please remove this before publication: It is unclear if updating
+RFC5933 (a Historic document) is the correct thing to do or not. We did it
+so that it shows up in Datatracker and similar, but this may be a
+mistake. We are happy to change this if the RFC Editor / IESG / whoever thinks
+this is a bad idea.]
 
 --- middle
 
@@ -87,27 +97,27 @@ DNSKEY and RRSIG records.  Validating resolvers MUST treat
 RRSIG records created from DNSKEY records using these algorithms as an
 unsupported algorithm. If no other RRSIG records of accepted cryptographic
 algorithms are available, the validating resolver MUST consider the
-associated resource records as Insecure.
+associated resource records as insecure.
 
 # Security Considerations
 
-This document increases the security of the DNSSEC ecosystem by
-deprecating algorithms that make use of older algorithms with ECC-GOST
-derived uses.
+This document potentially increases the security of the DNSSEC ecosystem by
+deprecating algorithms that are no longer recommended for use.
 
 # Operational Considerations
 
-Zone owners currently making use of ECC-GOST based algorithms should
-immediate switch to algorithms with stronger cryptographic strengths.
-DNS registries {{?RFC9499}} should prohibit their clients to upload
-and publish ECC-GOST based DS records.
+This document removes support for ECC-GOST. Zone operators currently making use
+of ECC-GOST based algorithms should switch to algorithms that remain supported.
+DNS registries should prohibit their clients from uploading and publishing
+ECC-GOST based DS records to ensure that they are using algorithms which are
+supported by DNSSEC validators, and so can be DNSSEC validated.
 
 # IANA Considerations
 
 IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
 Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
 Validation" columns of the DNS Security Algorithm Numbers registry
-{{DNSKEY-IANA}} for ECC-GOST (23) to MUST NOT.  Note that previously
+{{DNSKEY-IANA}} for ECC-GOST (12) to MUST NOT.  Note that previously
 the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
 columns were already MUST NOT.
 
@@ -122,10 +132,11 @@ columns were already MUST NOT.
 
 # Acknowledgments
 
-The authors appreciate the comments and suggestions from the following
-IETF participants in helping produce this document: Mark Andrews, Brian
-Dickson, Paul Wouters and the many members of the DNSOP working group
-that discussed this draft.
+The authors appreciate the comments and suggestions from the following IETF
+participants in helping produce this document: Mark Andrews, Steve Crocker,
+Brian Dickson, Russ Housely, Shumon Huque, Paul Hoffman, S Moonesamy, Peter
+Dickson, Peter Thomassen, Stefan Ubbink, Paul Wouters, Tim Wicinski,  and the
+many members of the DNSOP working group that discussed this draft.
 
 # Current algorithm usage levels
 
@@ -142,3 +153,4 @@ fill here:
 
 https://github.com/hardaker/draft-hardaker-dnsop-must-not-gost
 
+<RFC Editor: please delete this section upon publication>
