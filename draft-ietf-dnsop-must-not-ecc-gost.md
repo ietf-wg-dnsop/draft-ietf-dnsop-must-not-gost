@@ -39,6 +39,14 @@ normative:
     target: "http://www.iana.org/assignments/ds-rr-types"
     title: Delegation Signer (DS) Resource Record (RR) Type Digest Algorithms
 
+  draft-ietf-dnsop-algorithm-update:
+    author: 
+      name: Hardaker, W.
+      name: Kumari, W.
+    target: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-algorithm-update
+    title: Algorithm Implementation Requirements and Usage Guidance for DNSSEC
+    
+
 informative:
   RFC9558:
 
@@ -117,7 +125,8 @@ supported by DNSSEC validators, and so can be DNSSEC validated.
 IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
 Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
 Validation" columns of the DNS Security Algorithm Numbers registry
-{{DNSKEY-IANA}} for ECC-GOST (12) to MUST NOT.  Note that previously
+{{DNSKEY-IANA}} {{draft-ietf-dnsop-algorithm-update}} for ECC-GOST (12) 
+to MUST NOT.  Note that previously
 the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
 columns were already MUST NOT.
 
@@ -134,7 +143,7 @@ columns were already MUST NOT.
 
 The authors appreciate the comments and suggestions from the following IETF
 participants in helping produce this document: Mark Andrews, Steve Crocker,
-Brian Dickson, Russ Housely, Shumon Huque, Paul Hoffman, S Moonesamy, Peter
+Brian Dickson, Thomas Graf, Russ Housely, Shumon Huque, Paul Hoffman, S Moonesamy, Peter
 Dickson, Peter Thomassen, Stefan Ubbink, Paul Wouters, Tim Wicinski,  and the
 many members of the DNSOP working group that discussed this draft.
 
