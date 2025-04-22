@@ -1,7 +1,7 @@
 ---
 title: "Deprecate usage of ECC-GOST within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
-docname: draft-ietf-dnsop-must-not-ecc-gost-03
+docname: draft-ietf-dnsop-must-not-ecc-gost-04
 category: std
 ipr: trust200902
 stream: IETF
@@ -53,7 +53,8 @@ informative:
 
 --- abstract
 
-This document retires the use of ECC-GOST within DNSSEC.
+This document retires the use of GOST R 34.10-2001 (mnemonic
+"ECC-GOST") within DNSSEC.
 
 RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST R 34.11-94
 algorithms with DNS Security Extensions (DNSSEC). This document updates RFC5933

@@ -6,11 +6,11 @@ Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
 Updates: 5933 (if approved)                                    W. Kumari
 Intended status: Standards Track                                  Google
-Expires: 22 August 2025                                 18 February 2025
+Expires: 19 September 2025                                 18 March 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
-                 draft-ietf-dnsop-must-not-ecc-gost-03
+                 draft-ietf-dnsop-must-not-ecc-gost-04
 
 Abstract
 
@@ -41,7 +41,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 August 2025.
+   This Internet-Draft will expire on 19 September 2025.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Hardaker & Kumari        Expires 22 August 2025                 [Page 1]
+Hardaker & Kumari       Expires 19 September 2025               [Page 1]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
 
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -63,9 +63,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
    license-info) in effect on the date of publication of this document.
    Please review these documents carefully, as they describe your rights
    and restrictions with respect to this document.  Code Components
-   extracted from this document must include Revised BSD License text as
-   described in Section 4.e of the Trust Legal Provisions and are
-   provided without warranty as described in the Revised BSD License.
+   extracted from this document must include Simplified BSD License text
+   as described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Simplified BSD License.
 
 Table of Contents
 
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Hardaker & Kumari        Expires 22 August 2025                 [Page 2]
+Hardaker & Kumari       Expires 19 September 2025               [Page 2]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
 
 
 1.1.  Requirements notation
@@ -165,9 +165,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
 
 
 
-Hardaker & Kumari        Expires 22 August 2025                 [Page 3]
+Hardaker & Kumari       Expires 19 September 2025               [Page 3]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
 
 
    IANA is requested to set the "Use for DNSSEC Delegation", "Use for
@@ -221,9 +221,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
 
 
 
-Hardaker & Kumari        Expires 22 August 2025                 [Page 4]
+Hardaker & Kumari       Expires 19 September 2025               [Page 4]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST        February 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
 
 
 Appendix A.  Acknowledgments
@@ -256,11 +256,13 @@ Authors' Addresses
 
    Wes Hardaker
    USC/ISI
+
    Email: ietf@hardakers.net
 
 
    Warren Kumari
    Google
+
    Email: warren@kumari.net
 
 
@@ -275,6 +277,4 @@ Authors' Addresses
 
 
 
-
-
-Hardaker & Kumari        Expires 22 August 2025                 [Page 5]
+Hardaker & Kumari       Expires 19 September 2025               [Page 5]
