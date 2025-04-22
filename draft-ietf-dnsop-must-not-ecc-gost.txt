@@ -6,7 +6,7 @@ Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
 Updates: 5933 (if approved)                                    W. Kumari
 Intended status: Standards Track                                  Google
-Expires: 19 September 2025                                 18 March 2025
+Expires: 24 October 2025                                   22 April 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
@@ -14,7 +14,8 @@ Expires: 19 September 2025                                 18 March 2025
 
 Abstract
 
-   This document retires the use of ECC-GOST within DNSSEC.
+   This document retires the use of GOST R 34.10-2001 (mnemonic "ECC-
+   GOST") within DNSSEC.
 
    RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST
    R 34.11-94 algorithms with DNS Security Extensions (DNSSEC).  This
@@ -41,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 September 2025.
+   This Internet-Draft will expire on 24 October 2025.
 
 Copyright Notice
 
@@ -52,10 +53,9 @@ Copyright Notice
 
 
 
-
-Hardaker & Kumari       Expires 19 September 2025               [Page 1]
+Hardaker & Kumari        Expires 24 October 2025                [Page 1]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
 
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -63,9 +63,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
    license-info) in effect on the date of publication of this document.
    Please review these documents carefully, as they describe your rights
    and restrictions with respect to this document.  Code Components
-   extracted from this document must include Simplified BSD License text
-   as described in Section 4.e of the Trust Legal Provisions and are
-   provided without warranty as described in the Simplified BSD License.
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
 
 Table of Contents
 
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Hardaker & Kumari       Expires 19 September 2025               [Page 2]
+Hardaker & Kumari        Expires 24 October 2025                [Page 2]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
 
 
 1.1.  Requirements notation
@@ -157,17 +157,17 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
    IANA is requested to set the "Use for DNSSEC Signing", "Use for
    DNSSEC Validation", "Implement for DNSSEC Signing", and "Implement
    for DNSSEC Validation" columns of the DNS Security Algorithm Numbers
-   registry [DNSKEY-IANA] for ECC-GOST (12) to MUST NOT.  Note that
-   previously the "Use for DNSSEC Signing" and "Implement for DNSSEC
-   Delegation" columns were already MUST NOT.
+   registry [DNSKEY-IANA] [draft-ietf-dnsop-algorithm-update] for ECC-
+   GOST (12) to MUST NOT.  Note that previously the "Use for DNSSEC
+   Signing" and "Implement for DNSSEC Delegation" columns were already
+   MUST NOT.
 
 
 
 
-
-Hardaker & Kumari       Expires 19 September 2025               [Page 3]
+Hardaker & Kumari        Expires 24 October 2025                [Page 3]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
 
 
    IANA is requested to set the "Use for DNSSEC Delegation", "Use for
@@ -185,6 +185,12 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
               IANA, "Domain Name System Security (DNSSEC) Algorithm
               Numbers", n.d., <https://www.iana.org/assignments/dns-sec-
               alg-numbers/dns-sec-alg-numbers.xhtml>.
+
+   [draft-ietf-dnsop-algorithm-update]
+              W., K., "Algorithm Implementation Requirements and Usage
+              Guidance for DNSSEC", n.d.,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-
+              algorithm-update>.
 
    [DS-IANA]  IANA, "Delegation Signer (DS) Resource Record (RR) Type
               Digest Algorithms", n.d.,
@@ -210,30 +216,29 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
+
+
+
+
+
+Hardaker & Kumari        Expires 24 October 2025                [Page 4]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
+
+
    [RFC9558]  Makarenko, B. and V. Dolmatov, Ed., "Use of GOST 2012
               Signature Algorithms in DNSKEY and RRSIG Resource Records
               for DNSSEC", RFC 9558, DOI 10.17487/RFC9558, April 2024,
               <https://www.rfc-editor.org/rfc/rfc9558>.
 
-
-
-
-
-
-
-Hardaker & Kumari       Expires 19 September 2025               [Page 4]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           March 2025
-
-
 Appendix A.  Acknowledgments
 
    The authors appreciate the comments and suggestions from the
    following IETF participants in helping produce this document: Mark
-   Andrews, Steve Crocker, Brian Dickson, Russ Housely, Shumon Huque,
-   Paul Hoffman, S Moonesamy, Peter Dickson, Peter Thomassen, Stefan
-   Ubbink, Paul Wouters, Tim Wicinski, and the many members of the DNSOP
-   working group that discussed this draft.
+   Andrews, Steve Crocker, Brian Dickson, Thomas Graf, Russ Housely,
+   Shumon Huque, Paul Hoffman, S Moonesamy, Peter Dickson, Peter
+   Thomassen, Stefan Ubbink, Paul Wouters, Tim Wicinski, and the many
+   members of the DNSOP working group that discussed this draft.
 
 Appendix B.  Current algorithm usage levels
 
@@ -256,13 +261,11 @@ Authors' Addresses
 
    Wes Hardaker
    USC/ISI
-
    Email: ietf@hardakers.net
 
 
    Warren Kumari
    Google
-
    Email: warren@kumari.net
 
 
@@ -274,7 +277,4 @@ Authors' Addresses
 
 
 
-
-
-
-Hardaker & Kumari       Expires 19 September 2025               [Page 5]
+Hardaker & Kumari        Expires 24 October 2025                [Page 5]
