@@ -123,6 +123,9 @@ supported by DNSSEC validators, and so can be DNSSEC validated.
 
 # IANA Considerations
 
+[Note to IANA, to be removed by the RFC Editor: the registry fields
+listed above will be created by draft-ietf-dnsop-rfc8624-bis.]
+
 IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
 Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
 Validation" columns of the DNS Security Algorithm Numbers registry
