@@ -4,13 +4,13 @@
 
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
-Updates: 5933 (if approved)                                    W. Kumari
-Intended status: Standards Track                                  Google
-Expires: 24 October 2025                                   22 April 2025
+Intended status: Standards Track                               W. Kumari
+Expires: 21 November 2025                                         Google
+                                                             20 May 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
-                 draft-ietf-dnsop-must-not-ecc-gost-04
+                 draft-ietf-dnsop-must-not-ecc-gost-06
 
 Abstract
 
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 October 2025.
+   This Internet-Draft will expire on 21 November 2025.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Hardaker & Kumari        Expires 24 October 2025                [Page 1]
+Hardaker & Kumari       Expires 21 November 2025                [Page 1]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -63,9 +63,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
    license-info) in effect on the date of publication of this document.
    Please review these documents carefully, as they describe your rights
    and restrictions with respect to this document.  Code Components
-   extracted from this document must include Revised BSD License text as
-   described in Section 4.e of the Trust Legal Provisions and are
-   provided without warranty as described in the Revised BSD License.
+   extracted from this document must include Simplified BSD License text
+   as described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Simplified BSD License.
 
 Table of Contents
 
@@ -77,7 +77,7 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   4
-     6.2.  Informative References  . . . . . . . . . . . . . . . . .   4
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
    Appendix A.  Acknowledgments  . . . . . . . . . . . . . . . . . .   5
    Appendix B.  Current algorithm usage levels . . . . . . . . . . .   5
    Appendix C.  Github Version of this document  . . . . . . . . . .   5
@@ -94,7 +94,7 @@ Table of Contents
    GOST 34.11-2012 in DNSSEC is documented in [RFC9558], and so
    [RFC5933] has been made Historic.
 
-   Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and and GOST R
+   Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and GOST R
    34.11-94 is no longer recommended for use in DNSSEC [RFC9364].
 
    Note that this document does not change or discuss the use of GOST
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Hardaker & Kumari        Expires 24 October 2025                [Page 2]
+Hardaker & Kumari       Expires 21 November 2025                [Page 2]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
 
 1.1.  Requirements notation
@@ -154,6 +154,22 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
 
 5.  IANA Considerations
 
+   [Note to IANA, to be removed by the RFC Editor: the registry fields
+   listed above will be created by draft-ietf-dnsop-rfc8624-bis.]
+
+
+
+
+
+
+
+
+
+Hardaker & Kumari       Expires 21 November 2025                [Page 3]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
+
+
    IANA is requested to set the "Use for DNSSEC Signing", "Use for
    DNSSEC Validation", "Implement for DNSSEC Signing", and "Implement
    for DNSSEC Validation" columns of the DNS Security Algorithm Numbers
@@ -161,14 +177,6 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
    GOST (12) to MUST NOT.  Note that previously the "Use for DNSSEC
    Signing" and "Implement for DNSSEC Delegation" columns were already
    MUST NOT.
-
-
-
-
-Hardaker & Kumari        Expires 24 October 2025                [Page 3]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
-
 
    IANA is requested to set the "Use for DNSSEC Delegation", "Use for
    DNSSEC Validation", "Implement for DNSSEC Delegation", and "Implement
@@ -210,21 +218,19 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
               RFC 9364, DOI 10.17487/RFC9364, February 2023,
               <https://www.rfc-editor.org/rfc/rfc9364>.
 
+
+
+
+Hardaker & Kumari       Expires 21 November 2025                [Page 4]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
+
+
 6.2.  Informative References
 
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
-
-
-
-
-
-
-Hardaker & Kumari        Expires 24 October 2025                [Page 4]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST           April 2025
-
 
    [RFC9558]  Makarenko, B. and V. Dolmatov, Ed., "Use of GOST 2012
               Signature Algorithms in DNSKEY and RRSIG Resource Records
@@ -261,11 +267,21 @@ Authors' Addresses
 
    Wes Hardaker
    USC/ISI
+
    Email: ietf@hardakers.net
 
 
    Warren Kumari
    Google
+
+
+
+
+Hardaker & Kumari       Expires 21 November 2025                [Page 5]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
+
+
    Email: warren@kumari.net
 
 
@@ -277,4 +293,44 @@ Authors' Addresses
 
 
 
-Hardaker & Kumari        Expires 24 October 2025                [Page 5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hardaker & Kumari       Expires 21 November 2025                [Page 6]
