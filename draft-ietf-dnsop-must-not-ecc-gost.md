@@ -5,7 +5,6 @@ docname: draft-ietf-dnsop-must-not-ecc-gost-05
 category: std
 ipr: trust200902
 stream: IETF
-updates: 5933
 
 
 stand_alone: yes
