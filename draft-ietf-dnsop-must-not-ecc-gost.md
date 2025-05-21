@@ -1,7 +1,7 @@
 ---
 title: "Deprecate usage of ECC-GOST within DNSSEC"
 abbrev: MUST NOT DNSSEC with ECC-GOST
-docname: draft-ietf-dnsop-must-not-ecc-gost-05
+docname: draft-ietf-dnsop-must-not-ecc-gost-06
 category: std
 ipr: trust200902
 stream: IETF
