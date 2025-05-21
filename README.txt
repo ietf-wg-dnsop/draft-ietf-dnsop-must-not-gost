@@ -5,8 +5,8 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
 Intended status: Standards Track                               W. Kumari
-Expires: 21 November 2025                                         Google
-                                                             20 May 2025
+Expires: 22 November 2025                                         Google
+                                                             21 May 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 November 2025.
+   This Internet-Draft will expire on 22 November 2025.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Hardaker & Kumari       Expires 21 November 2025                [Page 1]
+Hardaker & Kumari       Expires 22 November 2025                [Page 1]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
@@ -77,7 +77,7 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   4
-     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   4
    Appendix A.  Acknowledgments  . . . . . . . . . . . . . . . . . .   5
    Appendix B.  Current algorithm usage levels . . . . . . . . . . .   5
    Appendix C.  Github Version of this document  . . . . . . . . . .   5
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Hardaker & Kumari       Expires 21 November 2025                [Page 2]
+Hardaker & Kumari       Expires 22 November 2025                [Page 2]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
@@ -165,7 +165,7 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
 
 
-Hardaker & Kumari       Expires 21 November 2025                [Page 3]
+Hardaker & Kumari       Expires 22 November 2025                [Page 3]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
@@ -173,10 +173,9 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
    IANA is requested to set the "Use for DNSSEC Signing", "Use for
    DNSSEC Validation", "Implement for DNSSEC Signing", and "Implement
    for DNSSEC Validation" columns of the DNS Security Algorithm Numbers
-   registry [DNSKEY-IANA] [draft-ietf-dnsop-algorithm-update] for ECC-
-   GOST (12) to MUST NOT.  Note that previously the "Use for DNSSEC
-   Signing" and "Implement for DNSSEC Delegation" columns were already
-   MUST NOT.
+   registry [DNSKEY-IANA] [draft-ietf-dnsop-rfc8624-bis] for ECC-GOST
+   (12) to MUST NOT.  Note that previously the "Use for DNSSEC Signing"
+   and "Implement for DNSSEC Delegation" columns were already MUST NOT.
 
    IANA is requested to set the "Use for DNSSEC Delegation", "Use for
    DNSSEC Validation", "Implement for DNSSEC Delegation", and "Implement
@@ -194,11 +193,10 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
               Numbers", n.d., <https://www.iana.org/assignments/dns-sec-
               alg-numbers/dns-sec-alg-numbers.xhtml>.
 
-   [draft-ietf-dnsop-algorithm-update]
-              W., K., "Algorithm Implementation Requirements and Usage
-              Guidance for DNSSEC", n.d.,
+   [draft-ietf-dnsop-rfc8624-bis]
+              W., K., "DNS Security Algorithm Numbers", n.d.,
               <https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-
-              algorithm-update>.
+              rfc8624-bis>.
 
    [DS-IANA]  IANA, "Delegation Signer (DS) Resource Record (RR) Type
               Digest Algorithms", n.d.,
@@ -218,15 +216,15 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
               RFC 9364, DOI 10.17487/RFC9364, February 2023,
               <https://www.rfc-editor.org/rfc/rfc9364>.
 
+6.2.  Informative References
 
 
 
-Hardaker & Kumari       Expires 21 November 2025                [Page 4]
+
+Hardaker & Kumari       Expires 22 November 2025                [Page 4]
 
 Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
-
-6.2.  Informative References
 
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
@@ -274,63 +272,9 @@ Authors' Addresses
    Warren Kumari
    Google
 
-
-
-
-Hardaker & Kumari       Expires 21 November 2025                [Page 5]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
-
-
    Email: warren@kumari.net
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Hardaker & Kumari       Expires 21 November 2025                [Page 6]
+Hardaker & Kumari       Expires 22 November 2025                [Page 5]
