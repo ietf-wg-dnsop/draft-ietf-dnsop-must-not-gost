@@ -38,12 +38,12 @@ normative:
     target: "http://www.iana.org/assignments/ds-rr-types"
     title: Delegation Signer (DS) Resource Record (RR) Type Digest Algorithms
 
-  draft-ietf-dnsop-algorithm-update:
+  draft-ietf-dnsop-rfc8624-bis:
     author: 
       name: Hardaker, W.
       name: Kumari, W.
-    target: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-algorithm-update
-    title: Algorithm Implementation Requirements and Usage Guidance for DNSSEC
+    target: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-rfc8624-bis
+    title: DNS Security Algorithm Numbers
     
 
 informative:
@@ -128,7 +128,7 @@ listed above will be created by draft-ietf-dnsop-rfc8624-bis.]
 IANA is requested to set the "Use for DNSSEC Signing", "Use for DNSSEC
 Validation", "Implement for DNSSEC Signing", and "Implement for DNSSEC
 Validation" columns of the DNS Security Algorithm Numbers registry
-{{DNSKEY-IANA}} {{draft-ietf-dnsop-algorithm-update}} for ECC-GOST (12) 
+{{DNSKEY-IANA}} {{draft-ietf-dnsop-rfc8624-bis}} for ECC-GOST (12) 
 to MUST NOT.  Note that previously
 the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
 columns were already MUST NOT.
