@@ -59,12 +59,6 @@ RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST R 34.11-94
 algorithms with DNS Security Extensions (DNSSEC). This document updates RFC5933
 by deprecating the use of ECC-GOST.
 
-[RFC Editor: please remove this before publication: It is unclear if updating
-RFC5933 (a Historic document) is the correct thing to do or not. We did it
-so that it shows up in Datatracker and similar, but this may be a
-mistake. We are happy to change this if the RFC Editor / IESG / whoever thinks
-this is a bad idea.]
-
 --- middle
 
 # Introduction
