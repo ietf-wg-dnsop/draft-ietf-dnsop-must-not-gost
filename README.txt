@@ -10,7 +10,7 @@ Expires: 5 December 2025                                          Google
 
 
                Deprecate usage of ECC-GOST within DNSSEC
-                 draft-ietf-dnsop-must-not-ecc-gost-06
+                 draft-ietf-dnsop-must-not-ecc-gost-07
 
 Abstract
 
