@@ -5,8 +5,8 @@
 Network Working Group                                        W. Hardaker
 Internet-Draft                                                   USC/ISI
 Intended status: Standards Track                               W. Kumari
-Expires: 22 November 2025                                         Google
-                                                             21 May 2025
+Expires: 5 December 2025                                          Google
+                                                             3 June 2025
 
 
                Deprecate usage of ECC-GOST within DNSSEC
@@ -20,12 +20,6 @@ Abstract
    RFC5933 (now historic) defined the use of GOST R 34.10-2001 and GOST
    R 34.11-94 algorithms with DNS Security Extensions (DNSSEC).  This
    document updates RFC5933 by deprecating the use of ECC-GOST.
-
-   [RFC Editor: please remove this before publication: It is unclear if
-   updating RFC5933 (a Historic document) is the correct thing to do or
-   not.  We did it so that it shows up in Datatracker and similar, but
-   this may be a mistake.  We are happy to change this if the RFC Editor
-   / IESG / whoever thinks this is a bad idea.]
 
 Status of This Memo
 
@@ -42,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 November 2025.
+   This Internet-Draft will expire on 5 December 2025.
 
 Copyright Notice
 
@@ -53,9 +47,15 @@ Copyright Notice
 
 
 
-Hardaker & Kumari       Expires 22 November 2025                [Page 1]
+
+
+
+
+
+
+Hardaker & Kumari        Expires 5 December 2025                [Page 1]
 
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST            June 2025
 
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -70,7 +70,7 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-     1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   3
+     1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   2
    2.  Deprecating ECC-GOST algorithms in DNSSEC . . . . . . . . . .   3
    3.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
    4.  Operational Considerations  . . . . . . . . . . . . . . . . .   3
@@ -90,29 +90,12 @@ Table of Contents
    [RFC5933].  These two algorithms were deprecated by the Orders of the
    Federal Agency for Technical Regulation and Metrology of Russia
    (Rosstandart) in August 2012, and were superseded by GOST 34.10-2012
-   and GOST 34.11-2012 respectively.  The use of GOST 34.10-2012 and
-   GOST 34.11-2012 in DNSSEC is documented in [RFC9558], and so
-   [RFC5933] has been made Historic.
+   and GOST 34.11-2012 respectively.  The use of these newer two
+   algorithms in DNSSEC is documented in [RFC9558] and their associated
+   requirement levels are not changed by this document.
 
    Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and GOST R
    34.11-94 is no longer recommended for use in DNSSEC [RFC9364].
-
-   Note that this document does not change or discuss the use of GOST
-   34.10-2012 and GOST 34.11-2012.
-
-
-
-
-
-
-
-
-
-
-Hardaker & Kumari       Expires 22 November 2025                [Page 2]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
-
 
 1.1.  Requirements notation
 
@@ -121,6 +104,15 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
    "OPTIONAL" in this document are to be interpreted as described in BCP
    14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
+
+
+
+
+
+Hardaker & Kumari        Expires 5 December 2025                [Page 2]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST            June 2025
+
 
 2.  Deprecating ECC-GOST algorithms in DNSSEC
 
@@ -157,19 +149,6 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
    [Note to IANA, to be removed by the RFC Editor: the registry fields
    listed above will be created by draft-ietf-dnsop-rfc8624-bis.]
 
-
-
-
-
-
-
-
-
-Hardaker & Kumari       Expires 22 November 2025                [Page 3]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
-
-
    IANA is requested to set the "Use for DNSSEC Signing", "Use for
    DNSSEC Validation", "Implement for DNSSEC Signing", and "Implement
    for DNSSEC Validation" columns of the DNS Security Algorithm Numbers
@@ -183,6 +162,13 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
    [DS-IANA] for GOST R 34.11-94 (3) to MUST NOT.  Note that previously
    the "Use for DNSSEC Signing" and "Implement for DNSSEC Delegation"
    columns were already MUST NOT.
+
+
+
+Hardaker & Kumari        Expires 5 December 2025                [Page 3]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST            June 2025
+
 
 6.  References
 
@@ -218,14 +204,6 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
 
 6.2.  Informative References
 
-
-
-
-Hardaker & Kumari       Expires 22 November 2025                [Page 4]
-
-Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
-
-
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
@@ -234,6 +212,19 @@ Internet-Draft        MUST NOT DNSSEC with ECC-GOST             May 2025
               Signature Algorithms in DNSKEY and RRSIG Resource Records
               for DNSSEC", RFC 9558, DOI 10.17487/RFC9558, April 2024,
               <https://www.rfc-editor.org/rfc/rfc9558>.
+
+
+
+
+
+
+
+
+
+Hardaker & Kumari        Expires 5 December 2025                [Page 4]
+
+Internet-Draft        MUST NOT DNSSEC with ECC-GOST            June 2025
+
 
 Appendix A.  Acknowledgments
 
@@ -277,4 +268,13 @@ Authors' Addresses
 
 
 
-Hardaker & Kumari       Expires 22 November 2025                [Page 5]
+
+
+
+
+
+
+
+
+
+Hardaker & Kumari        Expires 5 December 2025                [Page 5]
