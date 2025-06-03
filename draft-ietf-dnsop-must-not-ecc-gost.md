@@ -68,15 +68,13 @@ the DNS Security Extensions (DNSSEC) [RFC9364] was documented in
 {{RFC5933}}. These two algorithms were deprecated by the Orders of the
 Federal Agency for Technical Regulation and Metrology of Russia
 (Rosstandart) in August 2012, and were superseded by GOST 34.10-2012
-and GOST 34.11-2012 respectively. The use of GOST 34.10-2012 and GOST
-34.11-2012 in DNSSEC is documented in {{RFC9558}}, and so {{RFC5933}}
-has been made Historic.
+and GOST 34.11-2012 respectively. The use of these newer two
+algorithms in DNSSEC is documented in {{RFC9558}} and their associated
+requirement levels are not changed by this document.
 
 Thus, the use of GOST R 34.10-2001 (mnemonic GOST-ECC) and GOST R 34.11-94
 is no longer recommended for use in DNSSEC {{RFC9364}}.
 
-Note that this document does not change or discuss the use of GOST 34.10-2012
-and GOST 34.11-2012.
 
 ## Requirements notation
 
